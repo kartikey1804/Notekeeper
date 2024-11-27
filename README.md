@@ -95,21 +95,42 @@
 
 ```
 notekeeper/  
+├── public/  
+│   ├── index.html             # Main HTML file  
+│   ├── favicon.ico            # Favicon for the app  
+│   ├── manifest.json          # PWA manifest (if required)  
+│   └── assets/                # Static assets (images, logos, etc.)  
 ├── src/  
-│   ├── components/  
-│   │   ├── AddNoteModal.js  
-│   │   ├── EditNoteModal.js  
-│   │   ├── NoteCard.js  
-│   │   ├── Pagination.js  
-│   ├── pages/  
-│   │   ├── HomePage.js  
-│   ├── styles/  
-│   │   ├── App.css  
-│   ├── App.js  
-│   ├── index.js  
-├── .env  
-├── package.json  
-├── README.md  
+│   ├── components/            # Reusable UI components  
+│   │   ├── AddNoteModal.js    # Modal for adding notes  
+│   │   ├── EditNoteModal.js   # Modal for editing notes  
+│   │   ├── NoteCard.js        # Component for displaying individual notes  
+│   │   ├── Pagination.js      # Component for pagination  
+│   │   └── Header.js          # Optional header component  
+│   ├── pages/                 # Page-level components  
+│   │   ├── HomePage.js        # Main page displaying notes  
+│   │   └── ErrorPage.js       # Page to display error messages (optional)  
+│   ├── context/               # Context API for global state management  
+│   │   ├── NotesContext.js    # Context for managing notes  
+│   ├── services/              # API service files for backend interaction  
+│   │   ├── notesService.js    # CRUD functions for Firestore  
+│   ├── styles/                # Application styling  
+│   │   ├── App.css            # Global styles  
+│   │   ├── NoteCard.css       # Styles for the NoteCard component  
+│   │   ├── Modal.css          # Styles for modals  
+│   │   └── Pagination.css     # Styles for pagination  
+│   ├── utils/                 # Utility functions  
+│   │   ├── formatDate.js      # Function to format dates  
+│   │   └── toastNotifications.js  # Helper for toast messages  
+│   ├── App.js                 # Main app component  
+│   ├── index.js               # Entry point of the app  
+│   └── .env                   # Environment variables for Firebase credentials  
+├── .gitignore                 # Files and directories to ignore in Git  
+├── package.json               # Dependencies and scripts  
+├── package-lock.json          # Locked dependency versions  
+├── README.md                  # Project documentation  
+└── .env.example               # Example of environment variables  
+ 
 ```  
 
 ---
